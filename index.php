@@ -23,8 +23,8 @@ foreach($rows as $value ){
     <h5 class='card-title'>".$value['price']."</h5>
     <h5 class='card-title'>".$value['ingredients']."</h5>
     <p class='card-text'>".$value['allergens']."</p>
-    <a href='update.php' class='btn btn-primary'>Update</a>
-    <a href='delete.php' class='btn btn-primary'>Delete</a>
+    <a href='update.php?id=".$value['id']."' class='btn btn-primary'>Update</a>
+    <a href='delete.php?id=".$value['id']."' class='btn btn-primary'>Delete</a>
   </div>
 </div>";
 }
